@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="si" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probation Office Matugama | පරිවාස කාර්යාලය මතුගම</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#0d9488', /* Safe Child-Welfare Teal */
+                            600: '#0f766e',
+                            700: '#115e59',
+                            950: '#042f2e'
+                        },
+                        navy: {
+                            800: '#1e293b', /* Court Legal Navy */
+                            900: '#0f172a',
+                            950: '#020617'
+                        },
+                        gold: {
+                            500: '#d97706', /* Warm Amber accents */
+                            600: '#b45309'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans Sinhala', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* CSS-based Instant Language Switching Rules */
+        html[lang="en"] .lang-si { display: none !important; }
+        html[lang="si"] .lang-en { display: none !important; }
+        
+        /* Smooth Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d9488;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0f766e;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-direction-col flex-col">
+
+    <!-- TOP ACCENT STRIP -->
+    <div class="bg-brand-700 text-white py-1.5 px-4 text-xs font-semibold tracking-wide">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span>
+                    <i class="fa-solid fa-government mr-1.5"></i>
+                    <span class="lang-si">රාජ්‍ය පරිවාස හා ළමාරක්ෂක සේවා දෙපාර්තමේන්තුව - බස්නාහිර පළාත</span>
+                    <span class="lang-en">Department of Probation and Child Care Services - Western Province</span>
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="tel:0342247215" class="hover:underline flex items-center">
+                    <i class="fa-solid fa-phone mr-1.5 text-yellow-300 animate-pulse"></i>
+                    034-2247215
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- LOGO & BRAND -->
+                <div class="flex items-center space-x-3">
+                    <div class="bg-brand-50 p-2.5 rounded-xl border border-brand-100 flex items-center justify-center">
+                        <svg class="w-10 h-10 text-brand-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4C13.6569 4 15 5.34315 15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4ZM12 20C9.11709 20 6.5152 18.5284 5 16.3113C5 13.9126 9.66667 12.6 12 12C14.3333 12.6 19 13.9126 19 16.3113C17.4848 18.5284 14.8829 20 12 20Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-navy-900 leading-tight">
+                            <span class="lang-si block text-lg sm:text-xl font-bold">පරිවාස කාර්යාලය - මතුගම</span>
+                            <span class="lang-en block text-lg sm:text-xl font-extrabold tracking-tight">Probation Office - Matugama</span>
+                        </h1>
+                        <p class="text-xs text-brand-600 font-medium">
+                            <span class="lang-si">ළමා අයිතිවාසිකම් සහ සුභසාධන ආරක්ෂක පියස</span>
+                            <span class="lang-en">Guardians of Child Rights and Family Well-being</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NAVIGATION MENUS -->
+                <nav class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                    <a href="#home" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">
+                        <span class="lang-si">මුල් පිටුව</span><span class="lang-en">Home</span>
+                    </a>
+                    <a href="#about" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">
+                        <span class="lang-si">අප ගැන</span><span class="lang-en">About Us</span>
+                    </a>
+                    <a href="#services" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">
+                        <span class="lang-si">සේවාවන්</span><span class="lang-en">Services</span>
+                    </a>
+                    <a href="#circulars" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">
+                        <span class="lang-si">චක්‍රලේඛ</span><span class="lang-en">Circulars</span>
+                    </a>
+                    <a href="#gallery" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">
+                        <span class="lang-si">ඡායාරූප</span><span class="lang-en">Gallery</span>
+                    </a>
+                    <a href="#contact" class="text-slate-600 hover:text-brand-600 font-semibold transition-colors duration-200">
+                        <span class="lang-si">සම්බන්ධතා</span><span class="lang-en">Contact</span>
+                    </a>
+                </nav>
+
+                <!-- MULTILINGUAL TOGGLE BUTTON & MOBILE MENU TOGGLE -->
+                <div class="flex items-center space-x-4">
+                    <!-- LANGUAGE TOGGLE -->
+                    <button onclick="toggleLanguage()" class="relative inline-flex items-center justify-between w-24 h-10 p-1 bg-brand-50 border border-brand-200 rounded-full cursor-pointer hover:bg-brand-100 transition-all duration-300 shadow-sm" aria-label="Toggle language">
+                        <span class="absolute left-2.5 text-xs font-bold text-brand-700 lang-en-indicator">EN</span>
+                        <div id="toggle-knob" class="w-8 h-8 bg-brand-600 text-white text-xs font-black rounded-full flex items-center justify-center shadow-md transform transition-transform duration-300 translate-x-12">
+                            <span id="knob-text">සිං</span>
+                        </div>
+                        <span class="absolute right-2.5 text-xs font-bold text-brand-700 lang-si-indicator">සිංහල</span>
+                    </button>
+
+                    <!-- MOBILE MENU BTN -->
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-600 hover:text-brand-600 focus:outline-none" aria-label="Toggle Menu">
+                        <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE NAV DROPDOWN -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 transition-all duration-300">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-brand-50 hover:text-brand-600">
+                    <span class="lang-si">මුල් පිටුව</span><span class="lang-en">Home</span>
+                </a>
+                <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-brand-50 hover:text-brand-600">
+                    <span class="lang-si">අප ගැන</span><span class="lang-en">About Us</span>
+                </a>
+                <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-brand-50 hover:text-brand-600">
+                    <span class="lang-si">සේවාවන්</span><span class="lang-en">Services</span>
+                </a>
+                <a href="#circulars" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-brand-50 hover:text-brand-600">
+                    <span class="lang-si">චක්‍රලේඛ</span><span class="lang-en">Circulars</span>
+                </a>
+                <a href="#gallery" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-brand-50 hover:text-brand-600">
+                    <span class="lang-si">ඡායාරූප</span><span class="lang-en">Gallery</span>
+                </a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-brand-50 hover:text-brand-600">
+                    <span class="lang-si">සම්බන්ධතා</span><span class="lang-en">Contact</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN BODY SECTIONS -->
+    <main class="flex-grow">
+        
+        <!-- HERO HERO BANNER -->
+        <section id="home" class="relative bg-gradient-to-br from-brand-950 via-brand-900 to-navy-950 text-white overflow-hidden py-20 lg:py-32">
+            <!-- Background Decorative Shapes -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute -top-10 -left-10 w-96 h-96 rounded-full bg-brand-500 blur-3xl"></div>
+                <div class="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-yellow-500 blur-3xl"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Left Hero Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-brand-500/20 text-brand-300 border border-brand-500/30">
+                            <span class="lang-si">බස්නාහිර පළාත් පාලන මණ්ඩලය</span>
+                            <span class="lang-en">Western Provincial Administration</span>
+                        </span>
+                        
+                        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                            <span class="lang-si block leading-normal">සෑම දරුවෙකුටම සුරක්ෂිත හෙටක් උදාකරමු</span>
+                            <span class="lang-en block">Ensuring Every Child Safe & Harmonious Future</span>
+                        </h2>
+
+                        <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                            <span class="lang-si">මතුගම අධිකරණ කලාපයේ ළමා අයිතිවාසිකම් සුරැකීම, පවුල් සුරක්ෂිතතාවය තහවුරු කිරීම සහ අධිකරණමය නියෝග මත පරිවාස රැකවරණය සැලසීමේ නිල රාජ්‍ය නියෝජිතයා.</span>
+                            <span class="lang-en">The official state representative dedicated to protecting child rights, strengthening family structures, and implementing therapeutic probation services as mandated by courts in Matugama.</span>
+                        </p>
+
+                        <!-- Call to actions -->
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <a href="#services" class="inline-flex items-center justify-center px-6 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg hover:shadow-brand-500/20 transition-all duration-200">
+                                <span class="lang-si">අපගේ සේවාවන්</span><span class="lang-en">Explore Services</span>
+                                <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-xl border border-slate-700 hover:border-slate-600 transition-all duration-200">
+                                <span class="lang-si">ක්ෂණික සහාය</span><span class="lang-en">Emergency Contacts</span>
+                                <i class="fa-solid fa-phone ml-2 text-yellow-400"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Illustration / Mascot Side -->
+                    <div class="lg:col-span-5 relative flex justify-center">
+                        <div class="relative w-72 sm:w-80 md:w-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-800 bg-white p-6">
+                            <!-- Character illustration box -->
+                            <div class="bg-gradient-to-b from-brand-50 to-brand-100 rounded-2xl p-6 flex flex-col items-center justify-center relative">
+                                <div class="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] uppercase tracking-wider font-extrabold px-2.5 py-1 rounded-full shadow-sm">
+                                    <span class="lang-si">රාජකාරි සේවාව</span><span class="lang-en">Active Duty</span>
+                                </div>
+                                <img src="http://googleusercontent.com/image_collection/image_retrieval/14637999662908056219_1" alt="Sri Lankan Child Care and Welfare representation" class="w-48 h-48 rounded-full object-cover border-4 border-white shadow-md mb-4">
+                                <div class="text-center">
+                                    <h3 class="text-navy-900 font-bold text-lg mb-1">
+                                        <span class="lang-si">පරිවාස නිලධාරී කර්තව්‍යය</span>
+                                        <span class="lang-en">The Probation Officer Role</span>
+                                    </h3>
+                                    <p class="text-xs text-slate-500 font-medium max-w-xs">
+                                        <span class="lang-si">නීතිමය රැකවරණය සහ සමාජ සුභසාධනය වෙනුවෙන් කැපවූ ප්‍රමුඛයා.</span>
+                                        <span class="lang-en">Leading administrative agent protecting kids and resolving complex legal custody matters.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION QUICK TILES -->
+        <section class="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-100 p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Statistic 1 -->
+                <div class="flex items-start space-x-4 border-r border-slate-100 last:border-0 pr-4">
+                    <div class="bg-brand-50 p-4 rounded-2xl text-brand-600">
+                        <i class="fa-solid fa-scale-balanced text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-navy-900 font-extrabold text-2xl tracking-tight">100%</h4>
+                        <p class="text-slate-500 text-sm mt-1">
+                            <span class="lang-si">අධිකරණ වාර්තා සකස්කිරීමේ සාර්ථකත්වය</span>
+                            <span class="lang-en">Accurate Court Social Report Delivery</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Statistic 2 -->
+                <div class="flex items-start space-x-4 border-r border-slate-100 last:border-0 pr-4">
+                    <div class="bg-brand-50 p-4 rounded-2xl text-brand-600">
+                        <i class="fa-solid fa-child-reaching text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-navy-900 font-extrabold text-2xl tracking-tight">18 <span class="text-sm font-semibold">වසර දක්වා</span></h4>
+                        <p class="text-slate-500 text-sm mt-1">
+                            <span class="lang-si">ළමා අයිතිවාසිකම් සහ සම්පූර්ණ ආරක්ෂාව</span>
+                            <span class="lang-en">Legal Protection and Care up to Age 18</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Statistic 3 -->
+                <div class="flex items-start space-x-4">
+                    <div class="bg-brand-50 p-4 rounded-2xl text-brand-600">
+                        <i class="fa-solid fa-headset text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-navy-900 font-extrabold text-2xl tracking-tight">034-2247215</h4>
+                        <p class="text-slate-500 text-sm mt-1">
+                            <span class="lang-si">මතුගම කාර්යාලීය ක්ෂණික දුරකථන අංකය</span>
+                            <span class="lang-en">Matugama Office Main Contact Line</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase tracking-widest text-brand-600 font-extrabold mb-3">
+                        <span class="lang-si">අපගේ කාර්යභාරය</span><span class="lang-en">Who We Are</span>
+                    </h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        <span class="lang-si">පරිවාස නිලධාරියාගේ වගකීම හා දර්ශනය</span>
+                        <span class="lang-en">Mission & Mandate of the Probation Officer</span>
+                    </h3>
+                    <div class="w-16 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Left Info -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="bg-brand-50/50 rounded-2xl border border-brand-100 p-6">
+                            <h4 class="text-lg font-bold text-navy-900 mb-2">
+                                <span class="lang-si">ප්‍රඥප්තියේ මූලික අරමුණ</span>
+                                <span class="lang-en">Primary Objective of the Statute</span>
+                            </h4>
+                            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                                <span class="lang-si"><strong>2008 අංක 1 දරන ළමා සංවර්ධන මධ්‍යස්ථාන පිළිබඳ ප්‍රඥප්තිය:</strong> බස්නාහිර පළාත තුළ සිටින උපතේ සිට අවුරුදු 18 දක්වා වූ අනාථ, අත්හළ, අසරණ හා අපයෝජනයට ලක් වූ ළමුන්ට උපරිම සුභසිද්ධිය සැලසීම.</span>
+                                <span class="lang-en"><strong>Child Development Centers Act No. 1 of 2008:</strong> Specifically formed to provide care and high-standard welfare services for orphans, abandoned, vulnerable, and abused children (ages 0 to 18) within the Western Province.</span>
+                            </p>
+                        </div>
+
+                        <p class="text-slate-600 leading-relaxed">
+                            <span class="lang-si">අධිකරණ පද්ධතිය, පොලීසිය සහ ප්‍රාදේශීය ළමා ආරක්ෂණ කමිටු ඒකාබද්ධ කරමින් මතුගම බලප්‍රදේශයේ සියලුම පීඩිත ළමුන්ට හා පවුල් වලට යුක්තිය ඉටුකර දීම අපගේ අභිප්‍රායයි.</span>
+                            <span class="lang-en">By acting as an essential liaison between judicial courts, local law enforcement (police), and divisional children's committees, we strive to safeguard vulnerable family structures in Matugama.</span>
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                                <span class="text-sm font-semibold"><span class="lang-si">ළමා ආරක්ෂාව</span><span class="lang-en">Child Protection</span></span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                                <span class="text-sm font-semibold"><span class="lang-si">අධිකරණ සහයෝගීතාවය</span><span class="lang-en">Judicial Support</span></span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                                <span class="text-sm font-semibold"><span class="lang-si">පවුල් සවිබලගැන්වීම</span><span class="lang-en">Family Reintegration</span></span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-700">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-lg"></i>
+                                <span class="text-sm font-semibold"><span class="lang-si">නීතිමය මඟපෙන්වීම</span><span class="lang-en">Legal Guardianship</span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Info (Statute 10 Tasks list accordion style) -->
+                    <div class="lg:col-span-6 space-y-4">
+                        <h4 class="text-lg font-bold text-navy-900 mb-2">
+                            <span class="lang-si">ළමා සංවර්ධන මධ්‍යස්ථාන වල ප්‍රධාන වගකීම් 10</span>
+                            <span class="lang-en">10 Key Responsibilities of Child Development Centers</span>
+                        </h4>
+                        
+                        <div class="max-h-[380px] overflow-y-auto pr-2 space-y-3 scrollbar-thin">
+                            <!-- Task 1 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">1</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">නේවාසික පරිසරය තුළ භාරය, ආරක්ෂාව හා රැකවරණය සැලසීම.</span>
+                                    <span class="lang-en">Ensuring safe care, overall custody, protection and shelter within residential settings.</span>
+                                </p>
+                            </div>
+                            <!-- Task 2 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">2</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">වයසට සහ වැඩීමට අනුකූල සමබල ආහාරපාන ලබාදීම.</span>
+                                    <span class="lang-en">Providing balanced and nutritious food according to children's age and health growth.</span>
+                                </p>
+                            </div>
+                            <!-- Task 3 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">3</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">සෞඛ්‍යාරක්ෂිත සහ පරිසරයට අනුකූල ඇඳුම් පැළඳුම් ලබාදීම.</span>
+                                    <span class="lang-en">Providing clean, hygienic, and environmentally appropriate clothing.</span>
+                                </p>
+                            </div>
+                            <!-- Task 4 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">4</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">මානසික සුරක්ෂිතතාවයට හා සංවර්ධනයට අවශ්‍ය පහසුකම් සැලසීම.</span>
+                                    <span class="lang-en">Ensuring adequate facilities for mental wellness and psychological development.</span>
+                                </p>
+                            </div>
+                            <!-- Task 5 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">5</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">වයසට සරිලන්නාවූ විධිමත්, නොවිධිමත් අධ්‍යාපනයක් සහ වෘත්තීය පුහුණුවක් ලබාදීම.</span>
+                                    <span class="lang-en">Providing systematic, formal/informal education and practical vocational training.</span>
+                                </p>
+                            </div>
+                            <!-- Task 6 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">6</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">දක්ෂතා හා නිර්මාණශීලී හැකියාවන් වර්ධනය වන පරිදි සෞන්දර්යාත්මක, ක්‍රීඩා පහසුකම් සැලසීම.</span>
+                                    <span class="lang-en">Facilitating aesthetics, sports, and recreational opportunities to develop creativity.</span>
+                                </p>
+                            </div>
+                            <!-- Task 7 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">7</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">රසඥතාවය වර්ධනය වන පරිදි ජනසන්නිවේදන පහසුකම් සැලසීම.</span>
+                                    <span class="lang-en">Providing appropriate mass communication resources to enhance general awareness.</span>
+                                </p>
+                            </div>
+                            <!-- Task 8 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">8</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">දැනුම හා බුද්ධිවර්ධනයට අවශ්‍ය පුස්තකාල පහසුකම් සැපයීම.</span>
+                                    <span class="lang-en">Building robust libraries and study corners for cognitive growth.</span>
+                                </p>
+                            </div>
+                            <!-- Task 9 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">9</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">ආගමික, සංස්කෘතික, සදාචාරාත්මක හා ආධ්‍යාත්මික සංවර්ධනය සැලසීම.</span>
+                                    <span class="lang-en">Supporting moral values alongside religious, cultural, and spiritual guidance.</span>
+                                </p>
+                            </div>
+                            <!-- Task 10 -->
+                            <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 flex items-start space-x-3">
+                                <span class="bg-brand-500 text-white font-extrabold text-xs w-6 h-6 rounded-full flex items-center justify-center shrink-0">10</span>
+                                <p class="text-xs sm:text-sm text-slate-700">
+                                    <span class="lang-si">ඥාතීන් හා භාරකරුවන් සමඟ සහසම්බන්ධතාවය පවත්වා සුදුසු පරිදි සමාජගත කිරීම.</span>
+                                    <span class="lang-en">Maintaining healthy ties with biological families and ensuring safe reintegration.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="py-20 lg:py-28 bg-slate-50 border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase tracking-widest text-brand-600 font-extrabold mb-3">
+                        <span class="lang-si">අපගේ කාර්යයන්</span><span class="lang-en">Services Portfolio</span>
+                    </h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        <span class="lang-si">අධිකරණ හා මහජන සේවා කටයුතු</span>
+                        <span class="lang-en">Judicial Interventions & Public Services</span>
+                    </h3>
+                    <div class="w-16 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Services Tabs -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Magistrate Court Block -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300">
+                        <div class="bg-red-50 text-red-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 border border-red-100">
+                            <i class="fa-solid fa-gavel text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-3">
+                            <span class="lang-si">මහේස්ත්‍රාත් අධිකරණ නඩු</span>
+                            <span class="lang-en">Magistrate Court Cases</span>
+                        </h4>
+                        <p class="text-slate-500 text-sm mb-4">
+                            <span class="lang-si">නඩු පැවරීම පොලීසිය මගින් සිදු කෙරේ. මෙහිදී ළමා අතවර, අපරාධ හා සමාජ වාර්තා ඉදිරිපත් කිරීම සිදු කරයි.</span>
+                            <span class="lang-en">Referrals filed primarily by the Police. Involves compiling child welfare and detailed social status reports.</span>
+                        </p>
+                        <ul class="space-y-2 border-t border-slate-50 pt-4 text-sm text-slate-700">
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">ළමා අපයෝජන නඩු</span><span class="lang-en">Child Abuse Cases</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">භාරය හා ආරක්ෂාව පිළිබඳ නඩු</span><span class="lang-en">Child Custody & Protection</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">අපරාධ නඩු සහ සමාජ වාර්තා</span><span class="lang-en">Criminal Cases & Social Reports</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">කම්කරු, නඩත්තු හා ගෘහස්ථ ප්‍රචණ්ඩත්ව නඩු</span><span class="lang-en">Labor, Maintenance & Domestic Abuse</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- District Court Block -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300">
+                        <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 border border-blue-100">
+                            <i class="fa-solid fa-building-columns text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-3">
+                            <span class="lang-si">දිසා අධිකරණ නඩු</span>
+                            <span class="lang-en">District Court Cases</span>
+                        </h4>
+                        <p class="text-slate-500 text-sm mb-4">
+                            <span class="lang-si">පවුල් ජීවිතය, දරුකමට හදාගැනීම හා භාරකාරත්වය පිළිබඳ විශේෂ සිවිල් නඩු විභාගයන් සඳහා වාර්තා සැපයීම.</span>
+                            <span class="lang-en">Compiling critical legal evaluations for civil court proceedings regarding family status and adoption.</span>
+                        </p>
+                        <ul class="space-y-2 border-t border-slate-50 pt-4 text-sm text-slate-700">
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">කුලවැද්දුම් නඩු (දරුකමට හදා ගැනීම්)</span><span class="lang-en">Adoption Orders & Procedures</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">භාරකාරත්ව නඩු කටයුතු</span><span class="lang-en">Legal Guardianship Petitions</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">දික්කසාද නඩු (ළමා අයිතිවාසිකම් වෙනුවෙන්)</span><span class="lang-en">Divorce Case Consultations</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Child Development Centers Support Block -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300">
+                        <div class="bg-brand-50 text-brand-600 w-12 h-12 rounded-2xl flex items-center justify-center mb-6 border border-brand-100">
+                            <i class="fa-solid fa-hospital-user text-xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-navy-900 mb-3">
+                            <span class="lang-si">ළමා මධ්‍යස්ථාන කටයුතු</span>
+                            <span class="lang-en">Child Development Centers</span>
+                        </h4>
+                        <p class="text-slate-500 text-sm mb-4">
+                            <span class="lang-si">නිල ලියාපදිංචිය, පරිපාලනය, සුභසාධන දීමනා ලබාදීම සහ මධ්‍යස්ථාන නිරන්තර අධීක්ෂණය සිදු කිරීම.</span>
+                            <span class="lang-en">Regulating local foster homes, coordinating government stipends, and conducting periodic inspections.</span>
+                        </p>
+                        <ul class="space-y-2 border-t border-slate-50 pt-4 text-sm text-slate-700">
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">ළමා සංවර්ධන මධ්‍යස්ථාන ලියාපදිංචි කිරීම</span><span class="lang-en">Registration of New Centers</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">ළමා සංවර්ධන මධ්‍යස්ථාන අධීක්ෂණය</span><span class="lang-en">Supervision & Inspection Visits</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">නඩත්තු ආධාර ගෙවීම</span><span class="lang-en">Maintenance Funding Payments</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-angle-right text-brand-500 mr-2 shrink-0"></i><span class="lang-si">යථායෝග්‍ය ආධාර ගෙවීම් සම්බන්ධීකරණය</span><span class="lang-en">Caretaker Suitability Aid Grants</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Other Community Services -->
+                    <div class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300 md:col-span-2 lg:col-span-3">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                            <div class="space-y-2 max-w-xl">
+                                <h4 class="text-xl font-bold text-navy-900">
+                                    <span class="lang-si">ප්‍රජා ළමා සුභසාධන සහ දැනුවත් කිරීම්</span>
+                                    <span class="lang-en">Community Outreach & Welfare Programs</span>
+                                </h4>
+                                <p class="text-slate-500 text-sm">
+                                    <span class="lang-si">පළාත් සභාවේ සහ ප්‍රාදේශීය ළමා කමිටු සහයෝගයෙන් සමාජීය සබඳතා ශක්තිමත් කිරීමේ විශේෂ ව්‍යාපෘති.</span>
+                                    <span class="lang-en">Special regional outreach initiatives held in coordination with the divisional secretariat and childrens clubs.</span>
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 shrink-0">
+                                <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                    <i class="fa-solid fa-users text-brand-500 text-lg mb-1.5 block"></i>
+                                    <span class="text-xs font-bold text-navy-900 block"><span class="lang-si">සිද්ධි සමාලෝචන</span><span class="lang-en">Case Reviews</span></span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                    <i class="fa-solid fa-house-chimney-window text-brand-500 text-lg mb-1.5 block"></i>
+                                    <span class="text-xs font-bold text-navy-900 block"><span class="lang-si">ප්‍රාදේශීය කමිටු</span><span class="lang-en">Divisional Cmds</span></span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                    <i class="fa-solid fa-sitemap text-brand-500 text-lg mb-1.5 block"></i>
+                                    <span class="text-xs font-bold text-navy-900 block"><span class="lang-si">කොට්ඨාශ කමිටු</span><span class="lang-en">Zonal Cmds</span></span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                    <i class="fa-solid fa-cake-candles text-brand-500 text-lg mb-1.5 block"></i>
+                                    <span class="text-xs font-bold text-navy-900 block"><span class="lang-si">ළමා දින උත්සව</span><span class="lang-en">Children's Day</span></span>
+                                </div>
+                                <div class="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
+                                    <i class="fa-solid fa-graduation-cap text-brand-500 text-lg mb-1.5 block"></i>
+                                    <span class="text-xs font-bold text-navy-900 block"><span class="lang-si">දැනුවත් කිරීම්</span><span class="lang-en">Awareness</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CIRCULARS DIRECTORY -->
+        <section id="circulars" class="py-20 lg:py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <h2 class="text-xs uppercase tracking-widest text-brand-600 font-extrabold mb-3">
+                            <span class="lang-si">රාජ්‍ය විධිවිධාන</span><span class="lang-en">Official Directives</span>
+                        </h2>
+                        <h3 class="text-3xl font-extrabold text-navy-900 tracking-tight">
+                            <span class="lang-si">සක්‍රීය චක්‍රලේඛ සහ මාර්ගෝපදේශ</span>
+                            <span class="lang-en">Active Circulars & Legal Guidelines</span>
+                        </h3>
+                    </div>
+                    
+                    <!-- Search bar for circulars -->
+                    <div class="mt-6 md:mt-0 relative w-full md:w-80">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input id="circular-search" oninput="filterCirculars()" type="text" placeholder="Search circular code..." class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+                    </div>
+                </div>
+
+                <!-- Circulars Table Display -->
+                <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-slate-50 border-b border-slate-100">
+                                    <th class="px-6 py-4 text-xs uppercase tracking-wider font-bold text-navy-900">
+                                        <span class="lang-si">චක්‍රලේඛ අංකය</span><span class="lang-en">Circular Code</span>
+                                    </th>
+                                    <th class="px-6 py-4 text-xs uppercase tracking-wider font-bold text-navy-900">
+                                        <span class="lang-si">විෂය පථය හා විස්තරය</span><span class="lang-en">Scope & Subject Area</span>
+                                    </th>
+                                    <th class="px-6 py-4 text-xs uppercase tracking-wider font-bold text-navy-900">
+                                        <span class="lang-si">දීමනා / ක්‍රියාවලිය</span><span class="lang-en">Financials / Protocol</span>
+                                    </th>
+                                    <th class="px-6 py-4 text-xs uppercase tracking-wider font-bold text-navy-900 text-right">
+                                        <span class="lang-si">තත්ත්වය</span><span class="lang-en">Status</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="circulars-tbody" class="divide-y divide-slate-100">
+                                <!-- Circular 1 -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="8/2019">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">8/2019</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">සුදුසු පුද්ගල පරිලෝචන ආධාර</span>
+                                        <span class="lang-si text-xs block text-slate-500">අනුමත පරිවාස පුද්ගලයන් වෙනුවෙන් ආධාර ගෙවීම</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Suitable Person Review Allowance</span>
+                                        <span class="lang-en text-xs block text-slate-500">Financial support under authorized guardianship reviews</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded font-bold"><span class="lang-si">අනුමත දීමනා</span><span class="lang-en">State Funded</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500 animate-pulse"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Circular 2 -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="13/78">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">13/78</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">විෂයගොනු ක්‍රමවේදය</span>
+                                        <span class="lang-si text-xs block text-slate-500">නිල ලිපි ගොනු ආරක්ෂා කිරීම හා නිවැරදිව පවත්වාගෙන යාම</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Subject File Management Protocol</span>
+                                        <span class="lang-en text-xs block text-slate-500">Standardized preparation and maintenance of subject archives</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded font-bold"><span class="lang-si">පරිපාලන නියෝග</span><span class="lang-en">Administrative</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Circular 3 -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="2010/01">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">2010/01</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">දිවාසුරැකුම් මධ්‍යස්ථාන නියාමනය</span>
+                                        <span class="lang-si text-xs block text-slate-500">දිවා සුරැකුම් මධ්‍යස්ථාන ලියාපදිංචිය, පාලනය හා අවලංගු කිරීම</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Daycare Centers Guideline</span>
+                                        <span class="lang-en text-xs block text-slate-500">Licensing, monitoring operations, and cancellation standards</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-brand-50 text-brand-700 px-2 py-1 rounded font-bold"><span class="lang-si">නියාමන බලපත්‍ර</span><span class="lang-en">Licensing Required</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Circular 4 -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="2009/03">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">2009/03</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">පාලක / පාලිකා දිරිදීමනා</span>
+                                        <span class="lang-si text-xs block text-slate-500">ළමා සංවර්ධන හා දිවා සුරැකුම් භාරකරුවන් සඳහා දිරිදීමනා</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Warden Incentives circular</span>
+                                        <span class="lang-en text-xs block text-slate-500">Special monthly incentives paid for caretakers and wardens</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-yellow-50 text-yellow-700 px-2 py-1 rounded font-bold"><span class="lang-si">දිරිදීමනා සහිතයි</span><span class="lang-en">Paid Allowances</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Circular 5 -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="2017/02">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">2017/02</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">දරුවන් සමාජගත කිරීමේ වැඩපිළිවෙළ</span>
+                                        <span class="lang-si text-xs block text-slate-500">පරිවාසයේ සිටින දරුවන් ක්‍රමානුකූලව නැවත සමාජගත කිරීම</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Socialization of Institutionalized Children</span>
+                                        <span class="lang-en text-xs block text-slate-500">Step-by-step reintegration procedure for institutionalized minors</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded font-bold"><span class="lang-si">සමාජ ප්‍රතිසංස්කරණ</span><span class="lang-en">Integration Rules</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Circular 6 -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="2017/05">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">2017/05</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">දරුකමට හදාගැනීමේ ඉල්ලුම්කරුවන් ලියාපදිංචිය</span>
+                                        <span class="lang-si text-xs block text-slate-500">සුදුසු ඉල්ලුම්කරුවන් ඇගයීම හා ලේඛනගත කිරීම</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Adoptive Parents Registration Registry</span>
+                                        <span class="lang-en text-xs block text-slate-500">Official evaluation checklist and registration of eligible adopters</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded font-bold"><span class="lang-si">නීතිමය ලියාපදිංචිය</span><span class="lang-en">Civil Register</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <!-- Circular 7 (Sisumina Aid) -->
+                                <tr class="hover:bg-slate-50/50 circular-row" data-code="sisumina">
+                                    <td class="px-6 py-4 text-sm font-bold text-navy-900">Sisumina</td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="lang-si font-semibold text-navy-900 block">සිසුමිණ ශිෂ්‍යාධාර යෝජනා ක්‍රමය</span>
+                                        <span class="lang-si text-xs block text-slate-500">දක්ෂ හා අසරණ පාසල් සිසුන් සඳහා විශේෂ ශිෂ්‍යත්ව</span>
+                                        <span class="lang-en font-semibold text-navy-900 block">Sisumina Scholarship & Financial Aid</span>
+                                        <span class="lang-en text-xs block text-slate-500">Special educational monthly grants for deserving school children</span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-slate-600">
+                                        <span class="inline-flex items-center text-xs bg-amber-50 text-amber-700 px-2 py-1 rounded font-bold"><span class="lang-si">ශිෂ්‍යත්ව අරමුදල</span><span class="lang-en">Scholarship Aid</span></span>
+                                    </td>
+                                    <td class="px-6 py-4 text-sm text-right">
+                                        <span class="inline-flex items-center text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-bold">
+                                            <i class="fa-solid fa-circle text-[8px] mr-1.5 text-emerald-500 animate-pulse"></i>
+                                            <span class="lang-si">ක්‍රියාත්මකයි</span><span class="lang-en">Active</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Empty search fallback state -->
+                    <div id="no-circulars-msg" class="hidden p-8 text-center text-slate-400">
+                        <span class="lang-si">කිසිදු චක්‍රලේඛයක් හමු නොවීය.</span>
+                        <span class="lang-en">No matching circular codes found.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION WITH VISUALS -->
+        <section id="gallery" class="py-20 lg:py-28 bg-slate-50 border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs uppercase tracking-widest text-brand-600 font-extrabold mb-3">
+                        <span class="lang-si">පින්තූර එකතුව</span><span class="lang-en">Visual Records</span>
+                    </h2>
+                    <h3 class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight">
+                        <span class="lang-si">මෑත කාලීන ක්‍රියාකාරකම් හා වැඩසටහන්</span>
+                        <span class="lang-en">Recent Community Outreaches & Activities</span>
+                    </h3>
+                    <div class="w-16 h-1 bg-brand-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Picture Grid with authentic googleusercontent links fetched -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Img 1 -->
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/14637999662908056219_0" alt="Child support activity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold text-brand-600 tracking-wide uppercase block mb-1">
+                                <span class="lang-si">ප්‍රජා වැඩසටහන්</span><span class="lang-en">Outreach</span>
+                            </span>
+                            <h5 class="text-sm font-bold text-navy-900">
+                                <span class="lang-si">පාසල් ළමා දැනුවත් කිරීමේ සම්මන්ත්‍රණ</span>
+                                <span class="lang-en">School Child Protection Awareness Sessions</span>
+                            </h5>
+                        </div>
+                    </div>
+
+                    <!-- Img 2 -->
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/14637999662908056219_1" alt="Sri Lankan smiling school kids" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold text-brand-600 tracking-wide uppercase block mb-1">
+                                <span class="lang-si">ශිෂ්‍යාධාර</span><span class="lang-en">Scholarships</span>
+                            </span>
+                            <h5 class="text-sm font-bold text-navy-900">
+                                <span class="lang-si">සිසුමිණ ශිෂ්‍යත්ව ප්‍රදානෝත්සවය</span>
+                                <span class="lang-en">Sisumina Student Aid Ceremonial Distribution</span>
+                            </h5>
+                        </div>
+                    </div>
+
+                    <!-- Img 3 -->
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/14637999662908056219_2" alt="Welfare events" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold text-brand-600 tracking-wide uppercase block mb-1">
+                                <span class="lang-si">ළමා දින සැමරුම</span><span class="lang-en">Celebration</span>
+                            </span>
+                            <h5 class="text-sm font-bold text-navy-900">
+                                <span class="lang-si">වාර්ෂික ලෝක ළමා දින සැමරුම් උත්සව</span>
+                                <span class="lang-en">Annual Universal Children's Day Events</span>
+                            </h5>
+                        </div>
+                    </div>
+
+                    <!-- Img 4 -->
+                    <div class="group bg-white rounded-2xl overflow-hidden border border-slate-150 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="http://googleusercontent.com/image_collection/image_retrieval/14637999662908056219_3" alt="Community monitoring meeting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4">
+                            <span class="text-xs font-bold text-brand-600 tracking-wide uppercase block mb-1">
+                                <span class="lang-si">කමිටු රැස්වීම්</span><span class="lang-en">Committees</span>
+                            </span>
+                            <h5 class="text-sm font-bold text-navy-900">
+                                <span class="lang-si">ප්‍රාදේශීය ළමා ආරක්ෂණ සහයෝගීතා කමිටුව</span>
+                                <span class="lang-en">Divisional Child Welfare Review Conferences</span>
+                            </h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 lg:py-28 bg-white relative">
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Left Contacts column -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <h2 class="text-xs uppercase tracking-widest text-brand-600 font-extrabold mb-3">
+                                <span class="lang-si">කාර්යාලයට පැමිණෙන්න</span><span class="lang-en">Reach Us</span>
+                            </h2>
+                            <h3 class="text-3xl font-extrabold text-navy-900 tracking-tight">
+                                <span class="lang-si">මතුගම පරිවාස කාර්යාලයීය සබඳතා</span>
+                                <span class="lang-en">Probation Office Matugama Contacts</span>
+                            </h3>
+                            <div class="w-16 h-1 bg-brand-500 mt-4 rounded-full"></div>
+                        </div>
+
+                        <p class="text-slate-600 leading-relaxed">
+                            <span class="lang-si">ඕනෑම ළමා අපයෝජනයක්, හදිසි නඩු කටයුත්තක් හෝ සුභසාධන සහන විමසීමක් සඳහා අපගේ නිල කාර්යාලය සමඟ පහත මාධ්‍ය ඔස්සේ කඩිනමින් සම්බන්ධ වන්න.</span>
+                            <span class="lang-en">For emergency reports, court consultation queries, or registration support, feel free to contact us or visit the office during administrative working hours.</span>
+                        </p>
+
+                        <!-- Contacts Detail Card -->
+                        <div class="space-y-4">
+                            <!-- Detail 1: Tel -->
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-brand-50 text-brand-600 p-3.5 rounded-xl shrink-0">
+                                    <i class="fa-solid fa-phone text-lg"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs uppercase text-slate-400 font-extrabold tracking-wider">
+                                        <span class="lang-si">දුරකථන අංකය</span><span class="lang-en">Phone Number</span>
+                                    </h5>
+                                    <a href="tel:0342247215" class="text-navy-900 font-bold text-lg hover:underline block">034-2247215</a>
+                                </div>
+                            </div>
+
+                            <!-- Detail 2: Addr -->
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-brand-50 text-brand-600 p-3.5 rounded-xl shrink-0">
+                                    <i class="fa-solid fa-location-dot text-lg"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs uppercase text-slate-400 font-extrabold tracking-wider">
+                                        <span class="lang-si">ලිපිනය</span><span class="lang-en">Office Address</span>
+                                    </h5>
+                                    <p class="text-navy-900 font-bold text-sm sm:text-base">
+                                        <span class="lang-si">පරිවාස කාර්යාලය, අධිකරණ සංකීර්ණය අසල, මතුගම, ශ්‍රී ලංකාව.</span>
+                                        <span class="lang-en">Probation Office,  Complex, Matugama, Sri Lanka.</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Detail 3: Working Hours -->
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-brand-50 text-brand-600 p-3.5 rounded-xl shrink-0">
+                                    <i class="fa-solid fa-clock text-lg"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-xs uppercase text-slate-400 font-extrabold tracking-wider">
+                                        <span class="lang-si">රාජකාරි වේලාවන්</span><span class="lang-en">Working Hours</span>
+                                    </h5>
+                                    <p class="text-navy-900 font-bold text-sm">
+                                        <span class="lang-si">සඳුදා - සිකුරාදා (පෙ.ව. 8.30 - ප.ව. 4.15)</span>
+                                        <span class="lang-en">Monday - Friday (8:30 AM - 4:15 PM)</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right interactive contact Form column -->
+                    <div class="lg:col-span-7 bg-slate-50 border border-slate-100 p-8 rounded-3xl">
+                        <h4 class="text-xl font-bold text-navy-900 mb-6">
+                            <span class="lang-si">ක්ෂණික පණිවිඩයක් එවන්න</span>
+                            <span class="lang-en">Send a Digital Inquiry</span>
+                        </h4>
+
+                        <!-- Simple js form mock -->
+                        <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-500 mb-2">
+                                        <span class="lang-si">ඔබගේ නම</span><span class="lang-en">Your Full Name</span>
+                                    </label>
+                                    <input required type="text" class="w-full px-4 py-3 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase text-slate-500 mb-2">
+                                        <span class="lang-si">දුරකථන අංකය</span><span class="lang-en">Phone Number</span>
+                                    </label>
+                                    <input required type="tel" class="w-full px-4 py-3 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">
+                                    <span class="lang-si">විමසීමේ ස්වභාවය</span><span class="lang-en">Inquiry Category</span>
+                                </label>
+                                <select class="w-full px-4 py-3 border border-slate-200 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                    <option value="court"><span class="lang-si">අධිකරණ වාර්තා සහ නඩු කටයුතු</span><span class="lang-en">Court Cases & Reports</span></option>
+                                    <option value="daycare"><span class="lang-si">ළමා මධ්‍යස්ථාන හා දිවා සුරැකුම් ලියාපදිංචිය</span><span class="lang-en">Child Center / Daycare licensing</span></option>
+                                    <option value="aid"><span class="lang-si">සිසුමිණ හෝ සුදුසු පුද්ගල ආධාර</span><span class="lang-en">Scholarships & Welfare Aid</span></option>
+                                    <option value="other"><span class="lang-si">වෙනත් කරුණු</span><span class="lang-en">Other Inquiries</span></option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-2">
+                                    <span class="lang-si">පණිවිඩය</span><span class="lang-en">Detailed Message</span>
+                                </label>
+                                <textarea required rows="4" class="w-full px-4 py-3 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+                            </div>
+
+                            <!-- Success Dialog (initially hidden) -->
+                            <div id="form-success" class="hidden bg-emerald-50 text-emerald-800 p-4 rounded-xl text-sm border border-emerald-100">
+                                <span class="lang-si"><i class="fa-solid fa-circle-check mr-2"></i>ඔබගේ පණිවිඩය සාර්ථකව යොමු කරන ලදී! අප නිලධාරියෙකු කඩිනමින් ඔබව සම්බන්ධ කර ගනු ඇත.</span>
+                                <span class="lang-en"><i class="fa-solid fa-circle-check mr-2"></i>Inquiry submitted successfully! Our officer will contact you within working hours.</span>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg shadow-brand-500/10 transition-colors duration-200">
+                                <span class="lang-si">පණිවිඩය යොමු කරන්න</span><span class="lang-en">Submit Inquiry</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-900 pb-8 mb-8">
+                
+                <!-- brand footer info -->
+                <div class="flex items-center space-x-3 text-white text-left">
+                    <div class="bg-slate-900 p-2 rounded-lg">
+                        <i class="fa-solid fa-scale-balanced text-xl text-brand-500"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-extrabold text-sm"><span class="lang-si">පරිවාස කාර්යාලය - මතුගම</span><span class="lang-en">Probation Office - Matugama</span></h4>
+                        <p class="text-xs text-slate-400"><span class="lang-si">පළාත් පරිවාස හා ළමාරක්ෂක සේවා දෙපාර්තමේන්තුව</span><span class="lang-en">Department of Probation and Child Care Services</span></p>
+                    </div>
+                </div>
+
+                <!-- useful emergency hotlines -->
+                <div class="flex flex-wrap gap-4 text-xs font-bold text-white justify-center">
+                    <span class="bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
+                        <span class="lang-si">ළමා උපකාරක සේවය: 1929</span><span class="lang-en">Child Protection Helpline: 1929</span>
+                    </span>
+                    <span class="bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
+                        <span class="lang-si">පොලිස් හදිසි ඇමතුම්: 119</span><span class="lang-en">Police Emergency: 119</span>
+                    </span>
+                    <span class="bg-slate-900 px-3 py-2 rounded-lg border border-slate-800">
+                        <span class="lang-si">කාර්යාල දුරකථන: 034-2247215</span><span class="lang-en">Office: 034-2247215</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Disclaimer and copyrights -->
+            <div class="flex flex-col md:flex-row items-center justify-between text-xs gap-4">
+                <p>
+                    &copy; 2026. <span class="lang-si">පරිවාස කාර්යාලය මතුගම. සියලුම හිමිකම් ඇවිරිණි.</span>
+                    <span class="lang-en">Probation Office Matugama. All rights reserved.</span>
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:underline hover:text-white"><span class="lang-si">රහස්‍යතා ප්‍රතිපත්තිය</span><span class="lang-en">Privacy Policy</span></a>
+                    <a href="#" class="hover:underline hover:text-white"><span class="lang-si">භාවිත කොන්දේසි</span><span class="lang-en">Terms of Use</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP FLOATER -->
+    <button onclick="scrollToTop()" id="totop-btn" class="hidden fixed bottom-6 right-6 bg-brand-500 hover:bg-brand-600 text-white p-3.5 rounded-full shadow-xl hover:-translate-y-1 transition-all duration-300 z-50">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- CORE INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Language state toggle (Starts in Sinhala 'si')
+        let currentLang = 'si';
+
+        function toggleLanguage() {
+            const htmlElement = document.documentElement;
+            const toggleKnob = document.getElementById('toggle-knob');
+            const knobText = document.getElementById('knob-text');
+            
+            if (currentLang === 'si') {
+                currentLang = 'en';
+                htmlElement.setAttribute('lang', 'en');
+                toggleKnob.style.transform = 'translateX(0)'; // Shift knob to left
+                knobText.innerText = 'EN';
+            } else {
+                currentLang = 'si';
+                htmlElement.setAttribute('lang', 'si');
+                toggleKnob.style.transform = 'translateX(48px)'; // Shift knob to right (48px for standard 12rem container padding)
+                knobText.innerText = 'සිං';
+            }
+        }
+
+        // Mobile Menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            }
+        }
+
+        // Filter Circulars in search field
+        function filterCirculars() {
+            const query = document.getElementById('circular-search').value.toLowerCase().trim();
+            const rows = document.querySelectorAll('.circular-row');
+            const noMsg = document.getElementById('no-circulars-msg');
+            let visibleCount = 0;
+
+            rows.forEach(row => {
+                const code = row.getAttribute('data-code').toLowerCase();
+                const content = row.innerText.toLowerCase();
+                if (code.includes(query) || content.includes(query)) {
+                    row.style.display = '';
+                    visibleCount++;
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+
+            if (visibleCount === 0) {
+                noMsg.classList.remove('hidden');
+            } else {
+                noMsg.classList.add('hidden');
+            }
+        }
+
+        // Handle digital contact form submit
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('form-success');
+            
+            // Show Success feedback
+            successBox.classList.remove('hidden');
+            
+            // Reset input fields
+            event.target.reset();
+            
+            // Auto hide success box after 5s
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Show/hide floating scroll-to-top button
+        window.onscroll = function() {
+            const btn = document.getElementById('totop-btn');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.classList.remove('hidden');
+            } else {
+                btn.classList.add('hidden');
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
+```eof
+
+Your bilingual website for the **Probation Office of Matugama** is ready! Please review the layout and let me know if you would like to customize any sections or add further circular details.
